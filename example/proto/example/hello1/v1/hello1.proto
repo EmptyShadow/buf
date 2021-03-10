@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package example.hello1.v1;
+
+option go_package = "example/hello1/v1;hello1";
+
+import "google/api/annotations.proto";
+import "example/types/v1/types.proto";
+
+message HelloRequest {
+      example.types.v1.Type v = 1;
+}
+
+message HelloReply {
+      string Text = 1;
+}
+
+service Hello {
+      rpc Hello(HelloRequest) returns(HelloReply) {
+            option(google.api.http) = {
+                  post: "/hello",
+                  body: "*",
+            };
+      }
+}

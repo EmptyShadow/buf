@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package example.types.v1;
+
+option go_package = "example/types/v1;types";
+
+message Type {
+      string text = 1;
+}
