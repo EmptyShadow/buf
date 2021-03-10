@@ -4,8 +4,9 @@ name: release
 
 trigger:
   ref:
-    - refs/heads/main
-    - refs/tags/*
+    include:
+      - refs/heads/main
+      - refs/tags/*
 
 steps:
   - name: build
