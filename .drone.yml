@@ -3,10 +3,8 @@ type: docker
 name: release
 
 trigger:
-  ref:
-    include:
-      - refs/heads/main
-      - refs/tags/*
+  event:
+   - tag
 
 steps:
   - name: build
