@@ -1,5 +1,3 @@
-[![Build Status](https://cloud.drone.io/api/badges/EmptyShadow/buf/status.svg?ref=refs/heads/main)](https://cloud.drone.io/EmptyShadow/buf)
-
 # docker buf = buf + protoc
 
 Combining two docker images [buf](https://github.com/bufbuild/buf/blob/master/Dockerfile.buf) and [docker protoc](https://github.com/TheThingsIndustries/docker-protobuf) for more convenient use of the buf utility.
