@@ -11,7 +11,7 @@ steps:
     image: plugins/docker
     settings:
       repo:
-        from_secret: docker_api_repo
+        from_secret: docker_repo
       username:
         from_secret: docker_username
       password:
