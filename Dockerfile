@@ -1,6 +1,6 @@
-FROM bufbuild/buf:0.39.1 as buf_source
+FROM bufbuild/buf:0.42.1 as buf_source
 
-FROM thethingsindustries/protoc:3.1.32
+FROM thethingsindustries/protoc:development
 WORKDIR /workdir
 ENV XDG_CACHE_HOME=/workdir/.cache
 COPY --from=buf_source /usr/local/bin/buf /usr/bin/buf
